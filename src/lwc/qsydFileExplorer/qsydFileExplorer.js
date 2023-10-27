@@ -96,7 +96,7 @@ export default class QsydFileExplorerCmp extends LightningElement {
 		super();
 
 		this.addEventListener(CONSTANTS.CUSTOM_DOM_EVENT_TYPES.DATA_LOADED,
-			this.handleDataLoaded);
+			this.handleDataLoaded.bind(this));
 		this.addEventListener(CONSTANTS.CUSTOM_DOM_EVENT_TYPES.EXPLORER_LOADED,
 			this.handleExplorerLoaded.bind(this));
 		// this.addEventListener('keydown', this.handleKeyDown);
